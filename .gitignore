@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Related to QT generation file
+*.user
