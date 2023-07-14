@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginDialog</class>
+ <widget class="QDialog" name="LoginDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>723</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>130</y>
+     <width>47</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>账号</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>180</y>
+     <width>47</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>密码</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="usrLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>125</y>
+     <width>180</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Normal</enum>
+   </property>
+   <property name="placeholderText">
+    <string>请输入账号</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pwdLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>175</y>
+     <width>180</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>请输入密码</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginBtn">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>230</y>
+     <width>60</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>登录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitBtn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>230</y>
+     <width>60</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>exitBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>LoginDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>309</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>463</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
